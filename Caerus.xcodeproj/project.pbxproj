@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B02FCAC42CB07D6F00662371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FCAC32CB07D6F00662371 /* AppDelegate.m */; };
+		B02FCACA2CB07D6F00662371 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FCAC92CB07D6F00662371 /* HomeViewController.m */; };
+		B02FCACF2CB07D7600662371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02FCACE2CB07D7600662371 /* Assets.xcassets */; };
+		B02FCAD22CB07D7600662371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02FCAD02CB07D7600662371 /* LaunchScreen.storyboard */; };
+		B02FCAD52CB07D7600662371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FCAD42CB07D7600662371 /* main.m */; };
+		B03C1B2B2CD4285700599E3E /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03C1B162CD427E600599E3E /* SDL2.framework */; };
+		B03C1B2C2CD4285700599E3E /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03C1B162CD427E600599E3E /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0E32ECD2CD446A2001765CB /* SDLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E32ECC2CD446A2001765CB /* SDLView.m */; };
+		B0E32EDB2CD4492A001765CB /* SDLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E32EDA2CD4492A001765CB /* SDLViewController.m */; };
+		B0E32EDE2CD44B35001765CB /* emu.c in Sources */ = {isa = PBXBuildFile; fileRef = B0E32EDD2CD44B35001765CB /* emu.c */; };
+		B0E32EE42CD44C97001765CB /* boot.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = B0E32EE12CD44C97001765CB /* boot.ch8 */; };
+		B0E32EE72CD44D00001765CB /* resource_management.c in Sources */ = {isa = PBXBuildFile; fileRef = B0E32EE62CD44D00001765CB /* resource_management.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B03C1B132CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF66C0761BA81005FE872;
+			remoteInfo = Framework;
+		};
+		B03C1B152CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7D88B5423E2437C00DCD162;
+			remoteInfo = "Framework-iOS";
+		};
+		B03C1B172CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7D88D1523E24BED00DCD162;
+			remoteInfo = "Framework-tvOS";
+		};
+		B03C1B192CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D187CF28A5673500D2B4F1;
+			remoteInfo = "xcFramework-iOS";
+		};
+		B03C1B1B2CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF6B30761BA81005FE872;
+			remoteInfo = "Static Library";
+		};
+		B03C1B1D2CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7D88E5423E24D3B00DCD162;
+			remoteInfo = "Static Library-iOS";
+		};
+		B03C1B1F2CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A769B23D23E259AE00872273;
+			remoteInfo = "Static Library-tvOS";
+		};
+		B03C1B212CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB31407717554B71006C0E22;
+			remoteInfo = "Shared Library";
+		};
+		B03C1B232CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FCEB323E25AB700529352;
+			remoteInfo = "Shared Library-iOS";
+		};
+		B03C1B252CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FD06C23E25AC700529352;
+			remoteInfo = "Shared Library-tvOS";
+		};
+		B03C1B272CD427E600599E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF6BE0761BA81005FE872;
+			remoteInfo = "Standard DMG";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B03C1B2D2CD4285700599E3E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B03C1B2C2CD4285700599E3E /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B02FCABF2CB07D6F00662371 /* Caerus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caerus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02FCAC22CB07D6F00662371 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B02FCAC32CB07D6F00662371 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B02FCAC82CB07D6F00662371 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B02FCAC92CB07D6F00662371 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B02FCACE2CB07D7600662371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B02FCAD12CB07D7600662371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B02FCAD32CB07D7600662371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02FCAD42CB07D7600662371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B03C1B052CD427E600599E3E /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../Downloads/SDL-release-2.30.8/Xcode/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
+		B0E32ECB2CD446A2001765CB /* SDLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLView.h; sourceTree = "<group>"; };
+		B0E32ECC2CD446A2001765CB /* SDLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLView.m; sourceTree = "<group>"; };
+		B0E32ED92CD4492A001765CB /* SDLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLViewController.h; sourceTree = "<group>"; };
+		B0E32EDA2CD4492A001765CB /* SDLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLViewController.m; sourceTree = "<group>"; };
+		B0E32EDC2CD44B35001765CB /* emu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emu.h; sourceTree = "<group>"; };
+		B0E32EDD2CD44B35001765CB /* emu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = emu.c; sourceTree = "<group>"; };
+		B0E32EE02CD44C97001765CB /* test_opcode.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_opcode.ch8; sourceTree = "<group>"; };
+		B0E32EE12CD44C97001765CB /* boot.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = boot.ch8; sourceTree = "<group>"; };
+		B0E32EE22CD44C97001765CB /* pong.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pong.ch8; sourceTree = "<group>"; };
+		B0E32EE62CD44D00001765CB /* resource_management.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resource_management.c; sourceTree = "<group>"; };
+		B0E32EE82CD44D05001765CB /* resource_management.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resource_management.h; sourceTree = "<group>"; };
+		B0E32EE92CD44D62001765CB /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B02FCABC2CB07D6F00662371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03C1B2B2CD4285700599E3E /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B02FCAB62CB07D6F00662371 = {
+			isa = PBXGroup;
+			children = (
+				B03C1B052CD427E600599E3E /* SDL.xcodeproj */,
+				B02FCAC12CB07D6F00662371 /* Caerus */,
+				B02FCAC02CB07D6F00662371 /* Products */,
+				B03C1B292CD4284400599E3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B02FCAC02CB07D6F00662371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B02FCABF2CB07D6F00662371 /* Caerus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B02FCAC12CB07D6F00662371 /* Caerus */ = {
+			isa = PBXGroup;
+			children = (
+				B0E32EE82CD44D05001765CB /* resource_management.h */,
+				B0E32EE62CD44D00001765CB /* resource_management.c */,
+				B0E32EDF2CD44C97001765CB /* bootROM */,
+				B02FCAC22CB07D6F00662371 /* AppDelegate.h */,
+				B02FCAC32CB07D6F00662371 /* AppDelegate.m */,
+				B02FCAC82CB07D6F00662371 /* HomeViewController.h */,
+				B02FCAC92CB07D6F00662371 /* HomeViewController.m */,
+				B02FCACE2CB07D7600662371 /* Assets.xcassets */,
+				B02FCAD02CB07D7600662371 /* LaunchScreen.storyboard */,
+				B02FCAD32CB07D7600662371 /* Info.plist */,
+				B02FCAD42CB07D7600662371 /* main.m */,
+				B0E32ECB2CD446A2001765CB /* SDLView.h */,
+				B0E32ECC2CD446A2001765CB /* SDLView.m */,
+				B0E32ED92CD4492A001765CB /* SDLViewController.h */,
+				B0E32EDA2CD4492A001765CB /* SDLViewController.m */,
+				B0E32EDC2CD44B35001765CB /* emu.h */,
+				B0E32EDD2CD44B35001765CB /* emu.c */,
+				B0E32EE92CD44D62001765CB /* defs.h */,
+			);
+			path = Caerus;
+			sourceTree = "<group>";
+		};
+		B03C1B062CD427E600599E3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B03C1B142CD427E600599E3E /* SDL2.framework */,
+				B03C1B162CD427E600599E3E /* SDL2.framework */,
+				B03C1B182CD427E600599E3E /* SDL2.framework */,
+				B03C1B1A2CD427E600599E3E /* SDL2.framework */,
+				B03C1B1C2CD427E600599E3E /* libSDL2.a */,
+				B03C1B1E2CD427E600599E3E /* libSDL2.a */,
+				B03C1B202CD427E600599E3E /* libSDL2.a */,
+				B03C1B222CD427E600599E3E /* libSDL2.dylib */,
+				B03C1B242CD427E600599E3E /* libSDL2.dylib */,
+				B03C1B262CD427E600599E3E /* libSDL2.dylib */,
+				B03C1B282CD427E600599E3E /* SDL2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B03C1B292CD4284400599E3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0E32EDF2CD44C97001765CB /* bootROM */ = {
+			isa = PBXGroup;
+			children = (
+				B0E32EE02CD44C97001765CB /* test_opcode.ch8 */,
+				B0E32EE12CD44C97001765CB /* boot.ch8 */,
+				B0E32EE22CD44C97001765CB /* pong.ch8 */,
+			);
+			path = bootROM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B02FCABE2CB07D6F00662371 /* Caerus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02FCAD82CB07D7600662371 /* Build configuration list for PBXNativeTarget "Caerus" */;
+			buildPhases = (
+				B02FCABB2CB07D6F00662371 /* Sources */,
+				B02FCABC2CB07D6F00662371 /* Frameworks */,
+				B02FCABD2CB07D6F00662371 /* Resources */,
+				B03C1B2D2CD4285700599E3E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Caerus;
+			productName = Caerus;
+			productReference = B02FCABF2CB07D6F00662371 /* Caerus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B02FCAB72CB07D6F00662371 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B02FCABE2CB07D6F00662371 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B02FCABA2CB07D6F00662371 /* Build configuration list for PBXProject "Caerus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B02FCAB62CB07D6F00662371;
+			productRefGroup = B02FCAC02CB07D6F00662371 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B03C1B062CD427E600599E3E /* Products */;
+					ProjectRef = B03C1B052CD427E600599E3E /* SDL.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B02FCABE2CB07D6F00662371 /* Caerus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B03C1B142CD427E600599E3E /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = B03C1B132CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B162CD427E600599E3E /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = B03C1B152CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B182CD427E600599E3E /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = B03C1B172CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B1A2CD427E600599E3E /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = B03C1B192CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B1C2CD427E600599E3E /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = B03C1B1B2CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B1E2CD427E600599E3E /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = B03C1B1D2CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B202CD427E600599E3E /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = B03C1B1F2CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B222CD427E600599E3E /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = B03C1B212CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B242CD427E600599E3E /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = B03C1B232CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B262CD427E600599E3E /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = B03C1B252CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03C1B282CD427E600599E3E /* SDL2 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = SDL2;
+			remoteRef = B03C1B272CD427E600599E3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B02FCABD2CB07D6F00662371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E32EE42CD44C97001765CB /* boot.ch8 in Resources */,
+				B02FCAD22CB07D7600662371 /* LaunchScreen.storyboard in Resources */,
+				B02FCACF2CB07D7600662371 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B02FCABB2CB07D6F00662371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E32EDE2CD44B35001765CB /* emu.c in Sources */,
+				B0E32ECD2CD446A2001765CB /* SDLView.m in Sources */,
+				B0E32EE72CD44D00001765CB /* resource_management.c in Sources */,
+				B02FCACA2CB07D6F00662371 /* HomeViewController.m in Sources */,
+				B0E32EDB2CD4492A001765CB /* SDLViewController.m in Sources */,
+				B02FCAC42CB07D6F00662371 /* AppDelegate.m in Sources */,
+				B02FCAD52CB07D7600662371 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B02FCAD02CB07D7600662371 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B02FCAD12CB07D7600662371 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B02FCAD62CB07D7600662371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B02FCAD72CB07D7600662371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B02FCAD92CB07D7600662371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RR5WP5NG77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Caerus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xilis.Caerus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Downloads/SDL-release-2.30.8/include\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B02FCADA2CB07D7600662371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RR5WP5NG77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Caerus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xilis.Caerus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Downloads/SDL-release-2.30.8/include\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B02FCABA2CB07D6F00662371 /* Build configuration list for PBXProject "Caerus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02FCAD62CB07D7600662371 /* Debug */,
+				B02FCAD72CB07D7600662371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02FCAD82CB07D7600662371 /* Build configuration list for PBXNativeTarget "Caerus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02FCAD92CB07D7600662371 /* Debug */,
+				B02FCADA2CB07D7600662371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B02FCAB72CB07D6F00662371 /* Project object */;
+}
