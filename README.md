@@ -8,6 +8,7 @@ Caerus is a CHIP-8 emulator built for iOS devices, allowing users to play classi
 - Authentic Emulation: Accurate reproduction of CHIP-8 operations, including graphics rendering and input handling.
 - User-Friendly Interface: Intuitive controls for easy gameplay.
 - (PLANNED) Multi-Mode Support: Super Chip-48's 128x64 mode doubling resolution is supported.
+- (PLANNED) Apple Archive Support: Caerus takes advantage of Apple's Apple Archive format and supports loading multiple games from .aar.
 
 # Getting Started
 
@@ -16,3 +17,7 @@ To run the emulator, clone the repository, open in Xcode and change the SDL2 pat
 # Contributions
 
 Feel free to contribute by opening issues or submitting pull requests!
+
+# IN DEVELOPMENT
+
+Caerus is currently in development and is not yet complete.
